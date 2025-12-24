@@ -83,11 +83,11 @@
 
         <div v-if="loadingMore" class="q-pa-md text-center">
           <q-spinner color="primary" size="md" />
-          <div class="q-mt-sm text-grey">Loading more files...</div>
+          <div class="q-mt-sm text-grey">{{ $t('actions.loading') }}</div>
         </div>
 
         <div v-if="!hasMore && rows.length > 0 && !loading" class="q-pa-md text-center text-grey">
-          No more files to load
+          {{ $t('messages.noFiles') }}
         </div>
 
       </drag-and-drop>
@@ -130,7 +130,7 @@ export default defineComponent({
 			{
 				name: "name",
 				required: true,
-				label: "Name",
+				label: this.$t('app.title'),
 				align: "left",
 				field: "name",
 				sortable: true,

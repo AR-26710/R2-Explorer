@@ -2,7 +2,7 @@
   <q-page class="flex flex-center">
     <q-inner-loading
       :showing="true"
-      label="Loading..."
+      :label="$t('actions.loading')"
     />
   </q-page>
 </template>
