@@ -18,6 +18,11 @@ export type R2ExplorerConfig = {
 		| false;
 	showHiddenFiles?: boolean;
 	basicAuth?: BasicAuth | BasicAuth[];
+	language?: string;
+	i18n?: {
+		defaultLocale?: string;
+		supportedLocales?: string[];
+	};
 };
 
 export type AppEnv = {

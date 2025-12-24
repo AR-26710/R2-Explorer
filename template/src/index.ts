@@ -6,5 +6,9 @@ export default R2Explorer({
 	// basicAuth: {
 	//   username: 'username',
 	//   password: 'password'
+	// },
+	// i18n: {
+	//   defaultLocale: 'en', // Default language
+	//   supportedLocales: ['en', 'zh'] // Supported languages
 	// }
 });
